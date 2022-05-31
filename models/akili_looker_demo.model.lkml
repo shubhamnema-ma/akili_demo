@@ -13,15 +13,19 @@ explore: orders {
     sql_on: ${orders.order_id} = ${returns.order_id} ;;
     relationship: many_to_one
   }
-
-
 }
+
+explore: people {
+  persist_with: akili_looker_demo_default_datagroup
+}
+
+explore: derived_demo {}
 
 
 
 datagroup: akili_looker_demo_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "1 minuter"
 }
 
 persist_with: akili_looker_demo_default_datagroup
