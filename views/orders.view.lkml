@@ -19,6 +19,7 @@ view: orders {
   dimension: city {
     type: string
     sql: ${TABLE}.City ;;
+    required_access_grants: [can_view]
   }
 
   dimension: country_region {
