@@ -3,6 +3,7 @@ connection: "dv-looker-poc"
 include: "/views/**/*.view"
 
 explore: auto {}
+explore: loan {}
 
 explore: orders {
 #  access_filter: {

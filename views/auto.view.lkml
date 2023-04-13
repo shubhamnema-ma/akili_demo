@@ -130,6 +130,13 @@ view: auto {
 
   }
 
+  measure: bad_loan_percent{
+    type: number
+    value_format_name: percent_2
+    sql: ${count_of_bad_loan}/${count} ;;
+    drill_fields: [unique_id,disbursed_amount,asset_cost,type_of_loan,employment_type,maturities,branch_id]
+  }
+
 
 
 }
