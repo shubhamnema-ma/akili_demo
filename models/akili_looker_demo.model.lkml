@@ -2,6 +2,15 @@ connection: "dv-looker-poc"
 
 include: "/views/**/*.view"
 
+explore: site_master {
+  join: current_power_usage {
+    sql_on: ${site_master.id} = ${current_power_usage.tower_id} ;;
+    type: left_outer
+    relationship: one_to_many
+  }
+}
+
+
 explore: auto {}
 explore: loan {}
 
