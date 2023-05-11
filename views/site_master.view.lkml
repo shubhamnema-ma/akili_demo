@@ -8,6 +8,13 @@ view: site_master {
     type: string
     sql: ${TABLE}.ID ;;
   }
+
+
+  dimension: zipcode {
+    type: string
+    sql: ${TABLE}.zipcode ;;
+  }
+
   dimension: ac_service_provider {
     type: string
     sql: ${TABLE}.AC_Service_Provider ;;

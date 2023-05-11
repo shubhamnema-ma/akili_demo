@@ -8,6 +8,12 @@ explore: site_master {
     type: left_outer
     relationship: one_to_many
   }
+
+  join: weather_forecast {
+    sql_on: ${site_master.id} = ${weather_forecast.tower_id} ;;
+    type: inner
+    relationship: one_to_one
+  }
 }
 
 
