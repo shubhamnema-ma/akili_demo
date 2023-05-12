@@ -14,6 +14,32 @@ explore: site_master {
     type: inner
     relationship: one_to_one
   }
+
+  join: site_technician_mapping {
+    sql_on: ${site_master.id} = ${site_technician_mapping.site_id}  ;;
+    relationship: one_to_one
+    type: left_outer
+  }
+
+  join: technician_resource_master {
+    sql_on: ${site_technician_mapping.technician_id} = ${technician_resource_master.technician_id} ;;
+    type: inner
+    relationship: one_to_one
+  }
+
+  join: site_mobile_generator_mapping {
+    sql_on: ${site_master.id} =  ${site_mobile_generator_mapping.site_id} ;;
+    relationship: one_to_one
+    type: left_outer
+  }
+
+  join: mobile_generator_master {
+    sql_on: ${mobile_generator_master.generator_id} = ${site_mobile_generator_mapping.mobile_generator_id} ;;
+    type: inner
+    relationship: one_to_one
+  }
+
+
 }
 
 
