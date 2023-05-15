@@ -29,8 +29,8 @@ view: technician_resource_master {
 
   dimension: location {
     type: location
-    sql_latitude: Replace(substring(${TABLE}.location, 2 ,8),'(',"") ;;
-    sql_longitude: REPLACE(substring(${TABLE}.location, 12 ,21),')',"") ;;
+    sql_latitude: Replace(substring(${TABLE}.location, 2 ,7),'(',"") ;;
+    sql_longitude: REPLACE(substring(${TABLE}.location, 14 ,21),')',"") ;;
   }
 
 
