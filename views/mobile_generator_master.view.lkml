@@ -55,7 +55,7 @@ view: mobile_generator_master {
   dimension: location {
     type: location
     sql_latitude: Replace(substring(${TABLE}.Location, 2 ,8),'(',"") ;;
-    sql_longitude: REPLACE(substring(${TABLE}.Location, 12 ,21),')',"") ;;
+    sql_longitude: REPLACE(substring(${TABLE}.Location, 14 ,21),')',"") ;;
   }
 
   dimension: operator_phone {
