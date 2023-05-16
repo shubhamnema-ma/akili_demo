@@ -1,5 +1,5 @@
 view: weather_forecast {
-  sql_table_name: `mlconsole-poc.Tellusdemo.weather_forecast`
+  sql_table_name: `mlconsole-poc.tellusdemo.weather_forecast`
     ;;
 
   dimension: city {
