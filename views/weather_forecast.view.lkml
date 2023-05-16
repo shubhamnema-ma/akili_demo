@@ -1,5 +1,5 @@
 view: weather_forecast {
-  sql_table_name: `mlconsole-poc.tellusdemo.weather_forecast`
+  sql_table_name: `mlconsole-poc.Tellusdemo.weather_forecast`
     ;;
 
   dimension: city {
@@ -237,7 +237,7 @@ view: weather_forecast {
     border-radius: 5px 5px 0 0;
     float: left;
     line-height: 20px;
-    background-color: #D3D3D3;">Tellus Real Time Monitoring Dashboard
+    background-color: #D3D3D3;">Telus Real Time Monitoring Dashboard
     </div>
 
     <div>
@@ -309,7 +309,7 @@ view: weather_forecast {
       border-radius: 5px 5px 0 0;
       float: left;
       line-height: 20px;
-      background-color: #D3D3D3;">Tellus Real Time Monitoring Dashboard
+      background-color: #D3D3D3;">Telus Real Time Monitoring Dashboard
       </div>
 
       <a style="color: #000000;
@@ -377,7 +377,7 @@ view: weather_forecast {
     border-radius: 5px 5px 0 0;
     float: left;
     line-height: 20px;
-    background-color: #D3D3D3;">Tellus Real Time Monitoring Dashboard
+    background-color: #D3D3D3;">Telus Real Time Monitoring Dashboard
     </div>
     <a style="color: #000000;
     font-size:13pt;
